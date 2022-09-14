@@ -11,6 +11,7 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import { AcademicsComponent } from './academics/academics.component';
+
 const Routs: Routes = [
   { path: 'home', component: HomeComponent },
 
