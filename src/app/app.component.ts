@@ -11,7 +11,6 @@ export class AppComponent {
   className = 'light';
   modeName = 'Light mode';
   changeMode() {
-    alert(this.isDarkMode);
     if (this.isDarkMode == true) {
       this.isDarkMode = false;
       this.className = 'light';

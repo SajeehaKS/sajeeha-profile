@@ -30,3 +30,11 @@ li.nav-item {
   background-color: whi#dfe6e9;
   color: black;
 }
+.darkButton {
+  color: white;
+  background: none;
+  border: 0px;
+}
+*:focus {
+  outline: 0 !important;
+}
