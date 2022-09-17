@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -6,7 +5,53 @@
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body>
-    <app-introduction></app-introduction>
+  <body [ngClass]="getClass()">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+      <div>
+        <mat-slide-toggle [(ngModel)]="isDarkMode" (change)="changeMode()">
+          Darkmode
+        </mat-slide-toggle>
+      </div>
+      <button
+        class="navbar-toggler ml-auto hidden-sm-up float-xs-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarTogglerDemo01"
+      >
+        <ul class="navbar-nav mt-2 mt-lg-0">
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="home"
+              >About <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="experience">Experience</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="skills">Skills</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="academics">Academics</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="contact">Contact</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="download">Download</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <router-outlet></router-outlet>
   </body>
 </html>

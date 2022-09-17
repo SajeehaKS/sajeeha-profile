@@ -2,9 +2,25 @@
   margin-bottom: -2rem;
 }
 
-.jumbotron {
+.jumbotron1 {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #ffffff;
+
   border-radius: 0.3rem;
+}
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  font-family: cursive;
+}
+
+.lead {
+  font-size: 1.25rem;
+  max-width: 50%;
+  font-weight: 300;
+  /* align-items: baseline; */
+  text-align: justify;
+  text-justify: inter-word;
 }

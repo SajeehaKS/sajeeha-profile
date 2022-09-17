@@ -11,7 +11,7 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import { AcademicsComponent } from './academics/academics.component';
-
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 const Routs: Routes = [
   { path: 'home', component: HomeComponent },
 
@@ -22,7 +22,12 @@ const Routs: Routes = [
 ];
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot(Routs)],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(Routs),
+    MatSlideToggleModule,
+  ],
   declarations: [
     AppComponent,
     HelloComponent,
@@ -34,6 +39,7 @@ const Routs: Routes = [
     SkillsComponent,
     AcademicsComponent,
   ],
+  exports: [MatSlideToggleModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
