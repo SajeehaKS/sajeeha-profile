@@ -8,9 +8,9 @@
   <body [ngClass]="getClass()">
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
       <div>
-        <mat-slide-toggle [(ngModel)]="isDarkMode" (change)="changeMode()">
-          Darkmode
-        </mat-slide-toggle>
+        <button (click)="changeMode()">DarkMode</button>
+
+        <mat-slide-toggle> Darkmode </mat-slide-toggle>
       </div>
       <button
         class="navbar-toggler ml-auto hidden-sm-up float-xs-right"

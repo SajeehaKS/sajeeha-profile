@@ -12,6 +12,8 @@ import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import { AcademicsComponent } from './academics/academics.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatIconModule } from '@angular/material';
 const Routs: Routes = [
   { path: 'home', component: HomeComponent },
 
@@ -27,6 +29,8 @@ const Routs: Routes = [
     FormsModule,
     RouterModule.forRoot(Routs),
     MatSlideToggleModule,
+    MatButtonToggleModule,
+    MatIconModule,
   ],
   declarations: [
     AppComponent,
@@ -39,7 +43,7 @@ const Routs: Routes = [
     SkillsComponent,
     AcademicsComponent,
   ],
-  exports: [MatSlideToggleModule],
+  exports: [MatSlideToggleModule, MatButtonToggleModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
