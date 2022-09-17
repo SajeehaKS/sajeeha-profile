@@ -13,7 +13,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { AcademicsComponent } from './academics/academics.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { MatIconModule } from '@angular/material';
+import { MatIconModule } from '@angular/material/icon';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 const Routs: Routes = [
   { path: 'home', component: HomeComponent },
 
@@ -31,6 +32,7 @@ const Routs: Routes = [
     MatSlideToggleModule,
     MatButtonToggleModule,
     MatIconModule,
+    AngularFontAwesomeModule,
   ],
   declarations: [
     AppComponent,
