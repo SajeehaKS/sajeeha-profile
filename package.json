@@ -15,6 +15,7 @@
     "@angular/router": "6.0.0",
     "@syncfusion/ej2-angular-pdfviewer": "20.2.49",
     "angular-font-awesome": "^3.1.2",
+    "angular-svg-icon": "6.0.0",
     "core-js": "2.5.5",
     "font-awesome": "^4.7.0",
     "rxjs": "6.1.0",

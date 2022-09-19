@@ -8,7 +8,11 @@
   <body [ngClass]="getClass()">
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
       <div>
-        <button class="darkButton" (click)="changeMode()"><fa name="cog" animation="spin"></fa></button>
+        <button class="darkButton" (click)="changeMode()">
+          <mat-icon aria-hidden="false" aria-label="Example home icon"
+            >home</mat-icon
+          >
+        </button>
       </div>
       <button
         class="navbar-toggler ml-auto hidden-sm-up float-xs-right"
